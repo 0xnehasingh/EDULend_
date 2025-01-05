@@ -7,6 +7,7 @@ import Redemption from "./components/Redemption";
 import Landing from "./components/Landing";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { LendAndLoanContext } from "./context/LendAndLoanContext";
+import RiskAssessment from "./components/RiskAssessment";
 
 function App() {
   const { networkId, contractLiquidity, isSupportMetaMask } = useContext(LendAndLoanContext);
@@ -34,6 +35,7 @@ function App() {
                   <Route path="/borrow" element={<Borrow />} />
                   <Route path="/lend" element={<Lend />} />
                   <Route path="/position" element={<Redemption />} />
+                  <Route path="/riskassessment" element={<RiskAssessment />} />
                   <Route path="*" element={<Error />} />
                 </Routes>
               </div>
