@@ -9,8 +9,8 @@ import {
   RefreshCcw 
 } from 'lucide-react';
 
-// Import your contract ABI
-import { RISK_ASSESSMENT_ABI } from '../utils/RiskAssessment';
+
+import  RISK_ASSESSMENT_ABI from '../utils/riskassessment.json';
 
 const RiskAssessment = () => {
   const { account, provider } = useContext(LendAndLoanContext);
