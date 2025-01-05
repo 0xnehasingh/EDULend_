@@ -90,7 +90,7 @@ export default function Navbar() {
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 p-5">
       <div className="w-[fit-content] px-20 font-courgette font-extrabold text-[#3272e2] text-5xl cursor-pointer hover:scale-125 transition duration-200">
-        FILend
+        EDULend
       </div>
       <div className="fixed bottom-5 left-[50%] translate-x-[-50%] md:static md:translate-x-[%] p-[3px] bg-[#3272e2] flex rounded-full md:w-[fit-content] place-self-center">
         {navMenu.map((item, index) => (
@@ -110,7 +110,7 @@ export default function Navbar() {
           rel="noopenner noreferrer"
         >
           <div className="w-[9px] h-[9px] bg-yellow-500 mr-2 rounded-full"></div>
-          Wallaby Testnet
+          EDU Chain Testnet
         </a>
         {!account ? (
           <div
