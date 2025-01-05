@@ -45,7 +45,7 @@ export default function Navbar() {
   const [isShowingToken, setIsShowingToken] = useState(false);
   const [userBalance, setUserBalance] = useState();
   const dropdownRef = useRef();
-  const navMenu = ["Borrow", "Lend", "Position", "Contract"];
+  const navMenu = ["Borrow", "Lend", "Position",  "RiskAssessment", "Contract"];
 
   const handleClickOutside = (e) => {
     if (!dropdownRef.current.contains(e.target)) {
