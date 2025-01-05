@@ -70,7 +70,7 @@ function App() {
           <div className="h-[10px] w-[10px] rounded-full mr-1 bg-green-500"></div>
           <div>
             Contract total liquidity:{" "}
-            {contractLiquidity ? contractLiquidity + "tFIL" : "Fetching.."}
+            {contractLiquidity ? contractLiquidity + "EDU" : "Fetching.."}
           </div>
         </div>
       )}

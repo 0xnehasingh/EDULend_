@@ -110,7 +110,7 @@ const LendDetail = ({
               title="Link to transaction"
               target="_blank"
               rel="nonreferrer nonopennner"
-              href={"https://explorer.glif.io/" + information.hash}
+              href={"https://edu-chain-testnet.blockscout.com" + information.hash}
               className="my-2 break-words cursor-pointer "
             >
               Transaction Hash: {information.hash}
@@ -136,7 +136,7 @@ const LendDetail = ({
                 <a
                   rel="noreferrer noopenner"
                   target="_blank"
-                  href={"https://ropsten.etherscan.io/tx/" + lendTokenHash}
+                  href={"https://edu-chain-testnet.blockscout.com/tx/" + lendTokenHash}
                 >
                   {lendTokenHash}
                 </a>
@@ -151,7 +151,7 @@ const LendDetail = ({
                   target="_blank"
                   rel="noopenner noreferrer"
                   href={
-                    "https://ropsten.etherscan.io/tx/" +
+                    "https://edu-chain-testnet.blockscout.com/tx/" +
                     approveTransactionDetail.hash
                   }
                 >
@@ -178,7 +178,7 @@ const LendDetail = ({
                   target="_blank"
                   rel="noopenner noreferrer"
                   href={
-                    "https://explorer.glif.io/address/" +
+                    "https://edu-chain-testnet.blockscout.com/address/" +
                     loanContractAddress
                   }
                 >
@@ -335,7 +335,7 @@ export default function Lend() {
                   className="cursor-pointer relative flex items-center bg-[#162a4e] px-2 py-2 md:px-3 rounded-2xl hover:bg-gray-700 cursor-pointer transition text-xl md:text-2xl select-none text-center"
                 >
                   {isLendEther ? (
-                    <p className="px-2">tFIL</p>
+                    <p className="px-2">EDU</p>
                   ) : (
                     <p className="px-1">wETH</p>
                   )}{" "}
@@ -348,7 +348,7 @@ export default function Lend() {
                       className="flex items-center cursor-pointer text-xl hover:bg-gray-500 px-6 py-1 transition"
                     >
                       
-                      tFIL{" "}
+                      EDU{" "}
                     </div>
                     <div
                       onClick={() => setIsLendEther(false)}
@@ -370,7 +370,7 @@ export default function Lend() {
             {!isValidLendAmount && (
               <div className="p-0 flex justify-center items-center text-red-500">
                 <AiFillWarning className="mr-2" />
-                <div>Minimum lend amount 0.0001 tFIL or 1 wETH token</div>
+                <div>Minimum lend amount 0.0001 EDU or 1 wETH token</div>
               </div>
             )}
             {!isEnoughFund && (

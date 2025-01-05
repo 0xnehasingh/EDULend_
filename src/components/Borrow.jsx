@@ -153,7 +153,7 @@ export default function Loan() {
                 autoComplete="off"
               />
               <span className="text-2xl ml-5  cursor-auto select-none">
-                tFIL
+              EDU
               </span>
             </div>
           </div>

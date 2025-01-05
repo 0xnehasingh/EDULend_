@@ -33,7 +33,7 @@ export default function Confirm({
   };
   return (
     <div className="p-3 mt-5">
-      <div className="my-2">Confirm loan for {information.loanAmount} tFIL</div>
+      <div className="my-2">Confirm loan for {information.loanAmount} EDU </div>
       <div className="my-2">
         Confirm deposit collateral of {information.collateralAmount} wETH
       </div>

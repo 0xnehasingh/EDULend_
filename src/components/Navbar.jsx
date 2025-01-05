@@ -14,7 +14,7 @@ const NavItem = ({ active, content, handleOnClick }) => {
   return content == "Contract" ? (
     <a
       className={commonCss + "text-gray-300"}
-      href="https://explorer.glif.io/address/0x75Ea248A4fd6CE0dE85B18C7B890675A5Cb5C7cd/?network=wallabynet"
+      href="https://edu-chain-testnet.blockscout.com/address/0xDF11fC9D4Cc9296758fDD422472d5E3430dbAF1E"
       target="_blank"
       rel="noopenner noreferrer"
     >
@@ -122,14 +122,14 @@ export default function Navbar() {
         ) : (
           <div className="bg-[#3272e2] flex items-center rounded-2xl p-[1px]">
             <div
-              title={userBalance + " " + (isShowingToken ? "wETH" : "tFIL")}
+              title={userBalance + " " + (isShowingToken ? "wETH" : "EDU")}
               onClick={() => changeBalance()}
               className="hidden lg:flex rounded-tl-2xl rounded-bl-2xl py-2  cursor-pointer hover:border-gray-600 border-r-[0px] border-l-[1px] border-y-[1px] border-transparent transition duration-200"
             >
               <p className="px-3 select-none max-w-[120px] truncate">
                 {userBalance}
               </p>
-              <p className="mr-2">{isShowingToken ? "wETH" : "tFIL"}</p>
+              <p className="mr-2">{isShowingToken ? "wETH" : "EDU"}</p>
             </div>
             <a
               target="_blank"

@@ -6,7 +6,7 @@ export default function LoanDetails({ information, setStep, stepNow }) {
     <div className="p-3 mt-3">
       <div className="my-2 break-words">Lender: {information.lender}</div>
       <div className="my-2 break-words">
-        Loan amount: {information.loanAmount} tFIL
+        Loan amount: {information.loanAmount} EDU
       </div>
       <div className="my-2 break-words">
         Collateral amount: {information.collateralAmount} wETH

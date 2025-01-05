@@ -123,13 +123,13 @@ const LendList = ({
               </p>{" "}
               <p className="break-words">
                 {ethers.utils.formatEther(data.paybackAmountEther.toString())}{" "}
-                tFIL
+                EDU
               </p>
             </div>
             <div className="">
-              <p className="font-bold text-white underline">Lend tFIL amount</p>{" "}
+              <p className="font-bold text-white underline">Lend EDU amount</p>{" "}
               <p className="break-words">
-                {ethers.utils.formatEther(data.lendAmountEther.toString())} tFIL
+                {ethers.utils.formatEther(data.lendAmountEther.toString())} EDU
               </p>
             </div>
           </div>
@@ -223,15 +223,15 @@ const LoanList = ({
       <div>
         <div>
           <div className="">
-            <p className="font-bold text-white underline">Loan tFIL amount</p>{" "}
+            <p className="font-bold text-white underline">Loan EDU amount</p>{" "}
             <p className="break-words">
-              {ethers.utils.formatEther(data.loanAmount.toString())} tFIL
+              {ethers.utils.formatEther(data.loanAmount.toString())} EDU
             </p>
           </div>
           <div className="">
             <p className="font-bold text-white underline">Payback amount</p>{" "}
             <p className="break-words">
-              {ethers.utils.formatEther(data.paybackAmount.toString())} tFIL
+              {ethers.utils.formatEther(data.paybackAmount.toString())} EDU
             </p>
           </div>
           <div className="">

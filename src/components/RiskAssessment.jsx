@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 
 // Import your contract ABI
-// import { RISK_ASSESSMENT_ABI } from '../contracts/RiskAssessment';
+import { RISK_ASSESSMENT_ABI } from '../utils/RiskAssessment';
 
 const RiskAssessment = () => {
   const { account, provider } = useContext(LendAndLoanContext);
@@ -26,7 +26,7 @@ const RiskAssessment = () => {
   });
 
   // Contract address - Replace with your deployed contract address
-  const RISK_ASSESSMENT_ADDRESS = "YOUR_CONTRACT_ADDRESS";
+  const RISK_ASSESSMENT_ADDRESS = "0x9416266f93Bc3F3a765D7ad3B82241567cF6Df0a";
 
   // Initialize contract
   const getRiskContract = () => {
@@ -149,7 +149,7 @@ const RiskAssessment = () => {
             <div className="bg-[#1a3366] rounded-lg p-4">
               <div className="text-gray-300 mb-2">Total Volume</div>
               <div className="text-2xl font-bold text-white">
-                {userProfile.totalVolumeBorrowed} tFIL
+                {userProfile.totalVolumeBorrowed} EDU
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@ const RiskAssessment = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-gray-300 mb-2">Loan Amount (tFIL)</label>
+            <label className="block text-gray-300 mb-2">Loan Amount (EDU)</label>
             <input
               type="number"
               name="loanAmount"
@@ -237,7 +237,7 @@ const RiskAssessment = () => {
             <div className="bg-[#1a3366] rounded-lg p-4">
               <div className="text-gray-300 mb-2">Max Loan Amount</div>
               <div className="text-2xl font-bold text-white">
-                {riskAssessment.maxLoanAmount} tFIL
+                {riskAssessment.maxLoanAmount} EDU
               </div>
             </div>
 
