@@ -1,5 +1,5 @@
 
-# FILend | A Lending Dapp
+# EDULend | A Lending Dapp
 
 
 
